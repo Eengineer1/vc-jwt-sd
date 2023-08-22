@@ -2,7 +2,7 @@ import {
   YAMLMap,
   YAMLSeq,
 } from "yaml";
-import {walkList} from './walkList'
+import {walkList} from './walkList.js'
 
 export const walkMap = (obj: YAMLMap, replacer: any) => {
   for (const pair of obj.items) {

@@ -9,9 +9,9 @@ import {
 
 import pointer from 'json-pointer'
 
-import { yamlOptions } from "./yamlOptions";
+import { yamlOptions } from "./yamlOptions.js";
 
-import Parse from "../Parse"
+import Parse from "../Parse.js"
 
 const discloseMap = `🔴`
 const disloseSeq = `🟡`
@@ -19,7 +19,7 @@ const discloseTag = `!sd`
 const discloseObj = `_sd`
 const discloseArray = `...`
 
-const walkList = (list:any[], seq: YAMLSeq| any, config: any)=>{
+const walkList = (list:any[], seq: YAMLSeq | any, config: any)=>{
   for (const index in list){
     const element = list[index]
     if (element[discloseArray]){

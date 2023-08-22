@@ -1,5 +1,5 @@
 
-import { SD_DIGESTS_KEY, SD_LIST_PREFIX, DIGEST_ALG_KEY } from './constants'
+import { SD_DIGESTS_KEY, SD_LIST_PREFIX, DIGEST_ALG_KEY } from './constants.js'
 
 // TODO refactor this as a walk with state....
 const itemHasDisclosure = (item: any) => {

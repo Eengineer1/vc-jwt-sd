@@ -1,13 +1,9 @@
 import {
   parseDocument,
-  Pair,
-  Scalar,
-  parse
 } from "yaml";
 
-import { walkMap } from "./walkMap";
-import { discloseTag } from "./constants";
-import {yamlOptions  } from './yamlOptions'
+import { walkMap } from "./walkMap.js";
+import {yamlOptions  } from './yamlOptions.js'
 
 const replacer = (node: any) => {
   // no op

@@ -1,14 +1,14 @@
 
-import {  DIGEST_ALG_KEY } from "./constants";
+import {  DIGEST_ALG_KEY } from "./constants.js";
 
-import { VerifierCtx, RequestPresentationVerify, PublicKeyJwk } from './types'
+import { VerifierCtx, RequestPresentationVerify, PublicKeyJwk } from './types/index.js'
 
-import JWS from './JWS';
-import Parse from './Parse';
+import JWS from './JWS.js';
+import Parse from './Parse.js';
 
-import digester from "./digester";
+import digester from "./digester.js";
 
-import _unpack_disclosed_claims from './_unpack_disclosed_claims'
+import _unpack_disclosed_claims from './_unpack_disclosed_claims.js'
 
 const acceptableAud = (expectedAud: string, receivedAud: string | string[]): boolean => {
   return Array.isArray(receivedAud) ? receivedAud.includes(expectedAud) : receivedAud === expectedAud

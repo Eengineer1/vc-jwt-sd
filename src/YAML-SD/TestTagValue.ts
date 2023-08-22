@@ -1,4 +1,4 @@
-import { discloseValue } from './constants'
+import { discloseValue } from './constants.js'
 
 export class TestTagValue {
   public key: string

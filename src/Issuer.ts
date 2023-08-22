@@ -1,13 +1,13 @@
-import { RequestIssuance, CompactSign, Digest, IssuerCtx, Salter } from "./types";
+import { RequestIssuance, CompactSign, Digest, IssuerCtx, Salter } from "./types/index.js";
 
 import {
   DIGEST_ALG_KEY,
   COMBINED_serialization_FORMAT_SEPARATOR,
-} from "./constants";
+} from "./constants.js";
 
-import JWK from "./JWK";
+import JWK from "./JWK.js";
 
-import { issuancePayload } from "./YAML-SD/issuancePayload";
+import { issuancePayload } from "./YAML-SD/issuancePayload.js";
 
 // SDJWTIssuer
 export default class Issuer {

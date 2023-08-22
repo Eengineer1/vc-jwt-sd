@@ -1,4 +1,4 @@
-import { PrivateKeyJwk, PublicKeyJwk } from "./types";
+import { PrivateKeyJwk, PublicKeyJwk } from "./types/index.js";
 
 const format = (jwk: PublicKeyJwk | PrivateKeyJwk) => {
   const { kid, x5u, x5c, x5t, kty, crv, alg, key_ops, x, y, d, ...rest } = jwk;

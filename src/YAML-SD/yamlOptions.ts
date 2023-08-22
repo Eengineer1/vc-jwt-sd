@@ -1,4 +1,4 @@
-import { discloseTag } from "./constants";
+import { discloseTag } from "./constants.js";
 
 const sdTag = {
   tag: discloseTag,

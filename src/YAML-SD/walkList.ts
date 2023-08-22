@@ -3,7 +3,7 @@ import {
   YAMLSeq,
 } from "yaml";
 
-import { walkMap } from "./walkMap";
+import { walkMap } from "./walkMap.js";
 
 export const walkList = (list: YAMLSeq, replacer: any) => {
   for (const index in list.items) {

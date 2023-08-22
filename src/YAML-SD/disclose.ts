@@ -6,10 +6,10 @@ import {
   stringify,
 } from "yaml";
 
-import { discloseTag } from "./constants";
+import { discloseTag } from "./constants.js";
 
-import { parseCustomTags } from "./parseCustomTags";
-import { yamlOptions } from './yamlOptions'
+import { parseCustomTags } from "./parseCustomTags.js";
+import { yamlOptions } from './yamlOptions.js'
 
 const fakePair = (sourcePair: Pair) =>{
   let fake;

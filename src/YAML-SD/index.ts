@@ -3,12 +3,12 @@ import {
   stringify,
 } from "yaml";
 
-import { parseCustomTags } from "./parseCustomTags";
-import { yamlOptions } from './yamlOptions'
+import { parseCustomTags } from "./parseCustomTags.js";
+import { yamlOptions } from './yamlOptions.js'
 
-import { issuancePayload } from './issuancePayload'
-import { disclose } from "./disclose";
-import { tokenToSchema } from "./tokenToSchema"
+import { issuancePayload } from './issuancePayload.js'
+import { disclose } from "./disclose.js";
+import { tokenToSchema } from "./tokenToSchema.js"
 
 const dumps = (data: any) => {
   return stringify(data, yamlOptions);

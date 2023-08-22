@@ -1,4 +1,4 @@
-import {discloseKey } from './constants'
+import {discloseKey } from './constants.js'
 export class TestTagKey {
   constructor(public value: object | string | number) {}
   toJSON() {

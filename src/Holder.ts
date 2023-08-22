@@ -1,14 +1,14 @@
 import * as jose from "jose";
 
-import { HolderCtx, RequestPresentation, SdHolderState } from "./types";
+import { HolderCtx, RequestPresentation, SdHolderState } from "./types/index.js";
 
-import { COMBINED_serialization_FORMAT_SEPARATOR, KB_JWT_TYP_HEADER } from "./constants";
+import { COMBINED_serialization_FORMAT_SEPARATOR, KB_JWT_TYP_HEADER } from "./constants.js";
 
-import _select_disclosures from './_select_disclosures'
+import _select_disclosures from './_select_disclosures.js'
 
-import Parse from "./Parse";
+import Parse from "./Parse.js";
 
-import digester from "./digester";
+import digester from "./digester.js";
 
 // SDJWTHolder
 export default class Holder {

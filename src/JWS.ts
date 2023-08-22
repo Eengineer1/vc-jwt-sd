@@ -1,7 +1,7 @@
 import * as jose from "jose";
-import { PrivateKeyJwk, PublicKeyJwk, SignParams } from "./types";
+import { PrivateKeyJwk, PublicKeyJwk, SignParams } from "./types/index.js";
 
-import JWK from "./JWK";
+import JWK from "./JWK.js";
 
 const signer = async (privateKeyJwk: PrivateKeyJwk) => {
   const privateKey = await jose.importJWK(privateKeyJwk);

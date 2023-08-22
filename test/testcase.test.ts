@@ -3,8 +3,8 @@ import crypto from "crypto";
 import { Pair, Scalar, parse } from "yaml";
 import { base64url, decodeJwt, decodeProtectedHeader } from "jose";
 
-import YAML from "../src/YAML-SD";
-import Parse from "../src/Parse";
+import YAML from "../src/YAML-SD/index.js";
+import Parse from "../src/Parse.js";
 
 const digester = (json: string) => {
   return base64url.encode(crypto.createHash("sha256").update(json).digest());
